@@ -1,0 +1,169 @@
+body {
+/*   background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat; */
+/*   background-size:cover; */
+  background-color: #1C1C59;
+  margin:0
+}
+
+@font-face {
+    font-family: 'MADE Soulmaze';
+    src: url('fonts/MADESoulmaze.woff2') format('woff2'),
+        url('fonts/MADESoulmaze.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Soulmaze Outline';
+    src: url('fonts/MADESoulmazeOutline.woff2') format('woff2'),
+        url('fonts/MADESoulmazeOutline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h2 {
+    font-family: Karla;
+    color: white;
+    font-size: 1.3vw;
+    margin-top: 27vw;
+    text-shadow: 0 0 0px #fff, 0 0 20px #fff, 0 0 2px #fff, 0 0 1px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff;
+}
+
+
+.logo {
+    z-index: -1;
+    margin-top: 20vw;
+  text-align: center;
+  /* width: 65%; */
+  height: 250px;
+  /* margin: auto; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   user-select: none;
+}
+
+center {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo b{
+  /* font: 2vw 19vh "MADE Soulmaze"; */
+  font-family: 'MADE Soulmaze Outline';
+    font-size: 5vw;
+  color: #fee;
+  /* color: transparent; */
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fff, 0 0 0.5em #fff, 0 0 0.1em #fff, 0 10px 3px #000;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+
+/* follow me @nodws */
+#btn-twtr{
+  clear:both;
+  color:#fff;
+  border:2px solid;
+  border-radius:3px;
+  text-align:center;
+  text-decoration:none;
+  display:block;
+  font-family:sans-serif;
+  font-size:14px;
+  width:13em;
+  padding:5px 10px;
+  font-weight:600;
+  position:absolute;
+  bottom:20px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  background:rgba(0,0,0,0.2);
+  box-shadow:0 0 0px 3px rgba(0,0,0,0.2);
+  opacity:0.4
+}#btn-twtr:hover{color:#fff;opacity:1}
+
+.button {
+    /* z-index: 700; */
+    border-radius: 30vw;
+    width: 10vw;
+    padding: 0.65vw;
+    font-size: 1vw;
+    font-family: 'Karla', sans-serif;
+    margin-top: 1vw;
+    line-height: 2vw;
+    transition: transform .2s; /* Animation */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(98, 199, 165);
+    color: white;
+    text-decoration: none;
+    margin: 1vw;
+    box-shadow: 0px 4px 27px 0px #00000040;
+  }
+
+  .button:hover {
+    transform: scale(1.05);
+    color: white;
+    background-color: rgb(73, 165, 134);
+  }
+
+  .purple {
+    background-color: rgb(114, 92, 150);
+  }
+
+  .purple:hover {
+    transform: scale(1.05);
+    color: white;
+    background-color: rgb(78, 56, 114);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
